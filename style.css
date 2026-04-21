@@ -1,17 +1,20 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border:border-box;
+    box-sizing: border-box;
 
 }
 
 .navbar {
-    height: 60px;
+    height: auto;
     background-color: #0f1111;
+    flex-wrap: wrap;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 .nav-logo {
@@ -62,9 +65,10 @@
 .nav-search {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 20px;
+    margin-left: 20px 0;
     background-color: rgb(208, 156, 14);
-    width:620px;
+    width: 100%;
+    max-width:600px;
     height:40px;
     border-radius: 4px;
     
@@ -143,6 +147,17 @@ span {
     width: 70%;
     font-size: 0.85rem;
 }
+@media (max-width: 768px) {
+    .panel {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .panel-ops {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 .panel-deals {
     font-size: 0.9rem;
@@ -154,7 +169,8 @@ span {
 .hero-section {
     background-image: url(Hero_img1.png);
     background-size: cover;
-    height: 350px;
+    height: auto;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -196,6 +212,18 @@ span {
     margin-top: 15px;
 
 }
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .box {
+        width: 48%; /* 2 per row */
+    }
+}
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* 1 per row */
+    }
+}
+
 
 .box-img {
     background-size: cover;
@@ -237,6 +265,14 @@ footer {
     display:flex;
     justify-content: space-evenly;
     font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
 }
 
 .foot-panel2 p{
