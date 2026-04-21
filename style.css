@@ -16,25 +16,6 @@
     justify-content: space-evenly;
     padding: 10px;
 }
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .nav-search {
-        width: 100%;
-    }
-
-    .nav-logo,
-    .nav-address,
-    .nav-signin,
-    .nav-return,
-    .nav-cart {
-        width: 100%;
-    }
-}
 
 .nav-logo {
     height: 50px;
@@ -179,10 +160,7 @@ span {
         width: 100%;
         text-align: center;
     }
-    .panel-ops p {
-        display: block;
-        margin: 5px 0;
-    }
+    
 }
 
 .panel-deals {
@@ -254,13 +232,13 @@ span {
 @media (max-width: 768px) {
     .box {
         width: 48%; /* 2 per row */
-        padding: 10px;
+        
     }
 }
 @media (max-width: 480px) {
     .box {
         width: 100%; /* 1 per row */
-        padding: 10px;
+       
     }
 }
 
